@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="index.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/717a7f5fe9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="top"></div>
+            <h2> Responsive Registration Form</h2>
+        </div>
+        <div>
+            <form class="form" id="form" >
+                <div class="form__control ">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <input class="input__text" type="text" id="emailtxt" name="email" placeholder="Email" />
+                    <small>error Message</small>
+                </div>
+                <div class="form__control ">
+                    <i class="fas fa-user-alt"></i>
+                    <input class="input__text" type="text" id="usernametxt" name="username" placeholder="Username" />
+
+                </div>
+                <div class="form__control">
+                    <i class="fas fa-lock"></i>
+                    <input class="input__text" type="password" id="passwordtxt" name="password"
+                        placeholder="Password" />
+                    <small>error Message</small>
+                </div>
+                <div class="form__control">
+                    <i class="fas fa-lock"></i>
+                    <input class="input__text" type="password" id="confirmtxt" name="confirmpwd"
+                        placeholder="Re-type password" />
+                    <small>error Message</small>
+                </div>
+                <div class="first__column">
+                    <div class="form__control">
+                        <i class="fas fa-phone-square"></i>
+                        <input class="input__text phone" type="text" id="phonetxt" name="phoneNumber"
+                            placeholder="Phone Number" />
+                        <small>error Message</small>
+                    </div>
+                    <div class="form__control">
+                        <i class="fas fa-calendar-alt"></i>
+                        <input class="input__text" type="text" id="agetxt" name="age" placeholder="Age" />
+                        <small>error Message</small>
+                    </div>
+                </div>
+
+                <div class="names">
+                    <div class="form__control">
+                        <i class="fas fa-user-alt"></i>
+                        <input class="input__text first" type="text" id="firstnametxt" name="firstName"
+                            placeholder="Firstname" />
+                        <small>error Message</small>
+                    </div>
+                    <div class="form__control">
+                        <i class="fas fa-user-alt"></i>
+                        <input type="text" class="input__text" id="secondnametxt" name="lastName"
+                            placeholder="lastName" />
+                        <small>error Message</small>
+                    </div>
+                </div>
+
+
+                <div class="form__control">
+                    <select class="input__text" name="role" id="role">
+
+                        <option value="guest">Guest</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                    <small>error Message</small>
+                </div>
+
+                <div class="radio__form">
+                    <div class="form__control ">
+                        <input type="radio" id="sex" name="sex" value="female" />
+                        <label class="femtxt" name="female">Female</label>
+                    </div>
+
+                    <div class="form__control input__radio">
+                        <input type="radio" id="sex" name="sex" value="male" />
+                        <label name="male">Male</label>
+                    </div>
+                    <!-- <div id=result></div>> -->
+                </div>
+                <div class="form__control input__radio">
+                    <input type="checkbox" id="checktermstxt" value="check" />
+                    <label name="check">I agree with terms and conditions</label>
+                    <small>error Message</small>
+                </div>
+
+                <div class="form__control">
+                    <input type="checkbox" id="checknewstxt" value="check" />
+                    <label name="checknews">I want to receive the newsletter</label>
+                </div>
+                <div class="form__control">
+                    <button class="input__text"  onclick="registerNewUser()">Register</button>
+
+                </div>
+            </form>
+        </div>
+        <script src="./script.js"></script>
+</body>
+
+</html>
